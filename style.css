@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+*,
+p {
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  list-style: non;
+}
+body {
+  background-color: rgb(250, 245, 245);
+  font-family: Helvetica, sans-serif;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+.container {
+  background: #131921;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0.1rem 0;
+  height: 6rem;
+}
+.logo img {
+  width: 12rem;
+  padding-right: 0.2rem;
+  margin-top: 0.1rem;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+.logo img:hover {
+  border: 0.2rem solid white;
+  border-radius: 0.2rem;
+}
+
+.address {
+  display: flex;
+  padding: 1rem;
+  /* justify-content: space-between; */
+}
+.location {
+  color: #d8d9db;
+  font-size: 2rem;
+  /* margin-right: 0.5rem; */
+}
+.address a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+.address span:first-child {
+  font-size: 1.5rem;
+  color: #cacbcc;
+}
+.address span:nth-child(2) {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.address:hover {
+  border: 0.2rem solid white;
+  border-radius: 0.2rem;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+.nav a:hover {
+  border: 0.2rem solid white;
+  border-radius: 0.2rem;
+}
+.nav span:first-child {
+  font-size: 1rem;
+}
+.nav span:nth-child(2) {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.searchBar {
+  display: flex;
+}
+
+.searchBar input {
+  height: 3.3rem;
+  padding: 1rem;
+  border: none;
+  width: 50vw;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.searchBar:focus {
+  border-radius: 0.5rem;
+}
+
+.searchBar > i {
+  background-color: #f1b565;
+  font-size: 1.5rem;
+  height: 3.3rem;
+  line-height: 3.3rem;
+  text-align: center;
+  padding: 0 0.8rem;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+.searchBar > i:hover {
+  background-color: #f58e08;
+}
+
+.cart {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+.cart a i {
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+.cart small {
+  color: rgb(226, 107, 64);
+  font-weight: 800;
+  padding: 0.1rem;
+}
+.cart p {
+  margin-top: 1.2rem;
+  padding: 0.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.cart:hover {
+  border: 0.2rem solid white;
+  border-radius: 0.2rem;
+}
+.subcontainer {
+  display: flex;
+  height: 4rem;
+  margin-left: 0rem;
+  background-color: #222e3f;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+}
+.bar {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+.bar:hover {
+  border: 0.2rem solid white;
+  border-radius: 0.2rem;
+}
+.subnav ul {
+  display: flex;
+}
+.subnav ul li {
+  list-style: none;
+  padding: 1rem;
+}
+.subnav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+.subnav ul li a:hover {
+  border: 0.2rem solid white;
+  border-radius: 0.2rem;
+}
+.festival img {
+  width: 4rem;
+  height: 4rem;
+  padding-right: 0.2rem;
+  padding: 1rem;
+}
+
+.festival {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0;
+  height: 4rem;
+}
+.festival span {
+  margin-top: 1.3rem;
+}
+.festival:hover {
+  border: 0.2rem solid white;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+main {
+  max-width: 150rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner img {
+  width: 100%;
+  height: 60re;
+  z-index: -1;
+  margin-bottom: -15rem;
+  background: linear-gradient(
+      to top rgb(197, 197, 197),
+      rgba(255, 255, 255, -0)
+    )
+    url(img/amazon_great_indian_festival_sale_2021_image_1_1633097531416.webp)
+    no-repeat;
+  background-size: cover;
+}
+.boxes {
+  display: grid;
+  grid-template-areas:
+    "b1 b2 b3 b4"
+    "b1 b2 b3 b9"
+    "b5 b6 b7 b8";
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  height: 54rem;
+}
+.boxes .head {
+  /* border: 0.2rem solid tomato; */
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 30rem;
+}
+.boxes .heading {
+  color: #111;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+.boxes:hover {
+  cursor: pointer;
+}
+.boxes .link {
+  height: 7rem;
+}
+.boxes .link a {
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #3c86ee;
+}
+.box1 {
+  grid-area: b1;
+  background: #fff;
+  width: 35rem;
+  height: 42rem;
+}
+.box1 img {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 30rem;
+  height: 32rem;
+}
+
+.box2 {
+  grid-area: b2;
+  background: #fff;
+  width: 35rem;
+  height: 42rem;
+}
+
+.women {
+  display: grid;
+  grid-template-areas:
+    "cl fw"
+    "jw bp";
+}
+.cloths {
+  grid-area: cl;
+}
+.footwear {
+  grid-area: fw;
+}
+.jewells {
+  grid-area: jw;
+}
+.beauty {
+  grid-area: bp;
+}
+.women span img {
+  margin-top: 1rem;
+  margin-left: 3rem;
+  width: 13rem;
+  height: 13rem;
+}
+.women span p {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  margin-left: 3.2rem;
+}
+.box3 {
+  grid-area: b3;
+  background: #fff;
+  width: 35rem;
+  height: 42rem;
+}
+.box3 img {
+  margin-top: 3rem;
+  margin-left: 2rem;
+  width: 30rem;
+  height: 30rem;
+}
+.box4 {
+  grid-area: b4;
+  background: #fff;
+  width: 35rem;
+  height: 15rem;
+}
+.box4 button {
+  width: 30rem;
+  height: 3rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(248, 213, 58);
+}
+.box4 button:hover {
+  cursor: pointer;
+  background: rgb(241, 199, 8);
+}
+
+.box5 {
+  grid-area: b5;
+  background: #fff;
+  width: 35rem;
+  height: 42rem;
+  margin-top: 2rem;
+}
+.daily {
+  display: grid;
+  grid-template-areas:
+    "hb fd"
+    "by pt";
+}
+.health {
+  grid-area: hb;
+}
+.food {
+  grid-area: fd;
+}
+.baby {
+  grid-area: by;
+}
+.pet {
+  grid-area: pt;
+}
+.daily span img {
+  margin-top: 3.3rem;
+  margin-left: 2.5rem;
+  width: 12rem;
+  height: 11rem;
+}
+.daily span p {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  margin-left: 3.2rem;
+}
+.box6 {
+  grid-area: b6;
+  margin-top: 2rem;
+  background: #fff;
+  width: 35rem;
+  height: 42rem;
+}
+.box6 img {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 30rem;
+  height: 30rem;
+}
+.box7 {
+  grid-area: b7;
+  margin-top: 2rem;
+  background: #fff;
+  width: 35rem;
+  height: 42rem;
+}
+.pocketFriendly {
+  display: grid;
+  grid-template-areas:
+    "mc wc"
+    "mf sn";
+}
+.mensCloth {
+  grid-area: mc;
+}
+.womenCloth {
+  grid-area: wc;
+}
+.mensFoot {
+  grid-area: mf;
+}
+.skin {
+  grid-area: sn;
+}
+.pocketFriendly span img {
+  margin-top: 1rem;
+  margin-left: 3rem;
+  width: 13rem;
+  height: 12rem;
+}
+.pocketFriendly span p {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  margin-left: 3.2rem;
+}
+
+.box8 {
+  grid-area: b8;
+  margin-top: 2rem;
+  background: #fff;
+  width: 35rem;
+  height: 42rem;
+}
+.mFashion {
+  display: grid;
+  grid-template-areas:
+    "cl fr"
+    "bg wt";
+}
+.clothing {
+  grid-area: cl;
+}
+.fWear {
+  grid-area: fr;
+}
+.bags {
+  grid-area: bg;
+}
+.watches {
+  grid-area: wt;
+}
+.mFashion span img {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  width: 13rem;
+  height: 11rem;
+}
+.mFashion span p {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  margin-left: 3.2rem;
+}
+
+.box9 {
+  grid-area: b9;
+  width: 30rem;
+  height: 24rem;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+.box9 img {
+  width: 30rem;
+  height: 25rem;
+}
+.furnishing {
+  margin-top: 34rem;
+  margin-left: 30rem;
+}
+.categories {
+  background-color: #fff;
+  height: 30rem;
+  max-width: 150rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.categories div {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.categories p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 2rem;
+}
+.categories a {
+  position: relative;
+  font-size: 1.5rem;
+  color: #0a55be;
+  text-decoration: none;
+  margin-left: 3rem;
+}
+.account {
+  width: 100%;
+  height: 15rem;
+  margin-top: 3rem;
+  background: #fff;
+  border: 0.2rem solid #fff;
+}
+.account .sign {
+  height: 15rem;
+  margin-top: 2rem;
+  /* border: 0.2rem solid rgb(95, 37, 37); */
+}
+.account p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 65rem;
+  margin-top: 0%;
+  margin-bottom: 0.3rem;
+}
+
+#new {
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+}
+.account div button {
+  width: 25rem;
+  height: 3rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #fdbc07;
+  margin-left: 62rem;
+}
+#new a {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: #0a55be;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer {
+  background: #28333f;
+  width: 100%;
+  height: 50rem;
+  color: #fff;
+}
+.foot {
+  display: flex;
+  justify-content: space-evenly;
+}
+.foot span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.foot ul {
+  margin-top: 4rem;
+}
+.foot ul li {
+  margin-top: 1rem;
+  list-style: none;
+}
+.foot ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.foot ul li a:hover {
+  text-decoration: underline;
+}
+#language img {
+  width: 10rem;
+  margin-top: 4rem;
+  margin-left: 58rem;
+}
+#language ul {
+  padding: 0;
+  margin: 0;
+  float: right;
+  margin-right: 55rem;
+  margin-top: 4rem;
+}
+#language ul li {
+  position: relative;
+  list-style: none;
+  padding: 0.4rem;
+  border: 0.2rem solid #fff;
+  border-radius: 0.2rem;
+}
+#language ul li i {
+  position: relative;
+
+  padding: 0.4rem;
+}
+#language ul li a {
+  font-size: 1.5rem;
+  display: block;
+  text-decoration: none;
+  padding: 0 1.5rem;
+  color: #fff;
+}
+.cName ul {
+  display: flex;
+  margin-top: 8rem;
+  margin-left: 20rem;
+}
+.cName ul li {
+  list-style: none;
+  padding: 0.8rem;
+}
+.cName ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
